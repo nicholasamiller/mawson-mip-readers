@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-10</title>
+  <!-- Include Bootstrap CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+  <!-- Include Font Awesome for icons (if you want to use external icons library) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <style>
+    .audio-button {
+      margin-bottom: 10px; /* space between buttons */
+      font-size: 1.5em; /* larger text */
+    }
+    @media (max-width: 768px) { /* Bootstrap's medium breakpoint */
+      .audio-button {
+        width: 100%; /* full width on small screens */
+        display: block; /* stack buttons vertically */
+      }
+    }
+    .download-button {
+      font-size: 1.2em; /* Adjust the size as needed */
+      margin-bottom: 20px;
+        }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4">3-10</h2>
+  <div class="d-flex flex-column align-items-stretch">
+
+
+
+  <!-- Audio Controls -->
+  <div id="audio-player" class="d-flex flex-column align-items-stretch">
+    
+    <audio id="audio1" src="1.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(1)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      1
+    </button>
+    
+    <audio id="audio2" src="2.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(2)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      2
+    </button>
+    
+    <audio id="audio3" src="3.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(3)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      3
+    </button>
+    
+    <audio id="audio4" src="4.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(4)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      4
+    </button>
+    
+    <audio id="audio5" src="5.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(5)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      5
+    </button>
+    
+    <audio id="audio6" src="6.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(6)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      6
+    </button>
+    
+    <audio id="audio7" src="7.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(7)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      7
+    </button>
+    
+    <audio id="audio8" src="8.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(8)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      8
+    </button>
+    
+    <audio id="audio9" src="9.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(9)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      9
+    </button>
+    
+    <audio id="audio10" src="10.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(10)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      10
+    </button>
+    
+    <audio id="audio11" src="11.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(11)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      11
+    </button>
+    
+    <audio id="audio12" src="12.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(12)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      12
+    </button>
+    
+    <audio id="audio13" src="13.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(13)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      13
+    </button>
+    
+    <audio id="audio14" src="14.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(14)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      14
+    </button>
+    
+    <audio id="audio15" src="15.wav" preload="auto" class="mb-3"></audio>
+    <!-- Adding btn-lg for larger buttons and including a play icon -->
+    <button class="p-5 btn btn-primary btn-lg audio-button" onclick="playAudio(15)">
+      <!-- If using Font Awesome -->
+      <i class="fas fa-play"></i>
+      <!-- If using Unicode, the play character -->
+      15
+    </button>
+    
+  </div>
+</div>
+
+<!-- Include Bootstrap Bundle JS from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script>
+function playAudio(fileNumber) {
+  var audio = document.getElementById('audio' + fileNumber);
+  audio.play();
+}
+</script>
+
+</body>
+</html>
