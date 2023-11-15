@@ -262,7 +262,7 @@
             var button = document.getElementById('icon' + fileNumber);
             if (audio.paused) {
                 audio.play();
-                button.innerHTML = '<i class="fas fa-pause"></i>'; // Change to pause icon
+                button.innerHTML = '<i class="fas fa-redo"></i>'; // Change to restart icon
             } else {
                 audio.pause();
                 button.innerHTML = '<i class="fas fa-play"></i>'; // Change to play icon
@@ -274,7 +274,7 @@
             for (var i = 0; i < allAudios.length; i++) {
                 (function (index) {
                     allAudios[index].addEventListener('play', function () {
-                        document.getElementById('icon' + (index + 1)).innerHTML = '<i class="fas fa-pause"></i>';
+                        document.getElementById('icon' + (index + 1)).innerHTML = '<i class="fas fa-redo"></i>';
                     });
                     allAudios[index].addEventListener('pause', function () {
                         document.getElementById('icon' + (index + 1)).innerHTML = '<i class="fas fa-play"></i>';
